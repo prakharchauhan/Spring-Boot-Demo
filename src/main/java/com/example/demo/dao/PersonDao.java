@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import com.example.demo.model.person;
+import java.sql.ResultSet;
 public interface PersonDao {
     int insertPerson (UUID id, person per);
 
@@ -17,4 +18,5 @@ public interface PersonDao {
     Optional<person> selectPersonById(UUID id);
     int deletePerson(UUID id);
     int updatePerson(UUID id, person per);
+    //public person mapRow(ResultSet rs, int i);
 }
